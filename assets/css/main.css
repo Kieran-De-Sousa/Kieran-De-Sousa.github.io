@@ -2037,7 +2037,7 @@ input, select, textarea {
 
 	#nav {
 		background-color: #282828;
-		text-align: center;
+		text-align: right;
 		position: fixed;
 		left: 0;
 		top: 0;
