@@ -1627,7 +1627,16 @@ input, select, textarea {
 		}
 
 		.image.fit {
-			display: block;
+			display: inline-block;
+			width: 100%;
+		}
+
+		.image.slideshow {
+			display: none;
+			position: relative;
+			margin: auto;
+			text-align: center;
+			height: auto;
 			width: 100%;
 		}
 
@@ -1652,13 +1661,6 @@ input, select, textarea {
 				width: auto;
 			}
 
-/* Slideshow */
-	.slideshow {
-		display: none;
-		position: relative;
-		width: 100%;
-	}
-
 /* Buttons */
 
 	input[type="button"],
@@ -1669,12 +1671,9 @@ input, select, textarea {
 	.prev, .next {
 		cursor: pointer;
 		position: relative;
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-		top: -50%;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
+		top: 50%;
+		-ms-transform: translateY(-50%);
+  		transform: translateY(-50%);
 		color: #fff;
 		font-weight: bold;
 		font-size: 1em;
@@ -1682,10 +1681,10 @@ input, select, textarea {
 		user-select: none;
 	}
 	.prev {
-		left: -45%;
+		left: 30%;
 	}
 	.next {
-		right: -45%;
+		right: 60%;
 		border-radius: 3px 0 0 3px; 
 	}
 
