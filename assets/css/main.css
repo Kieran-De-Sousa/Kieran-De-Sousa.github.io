@@ -94,7 +94,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #000033;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -104,12 +104,12 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
+		color: #374595;
 		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: #6a78c8 !important;
 		}
 
 		a img {
@@ -118,7 +118,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #000002;
 	}
 
 	i, em {
@@ -144,7 +144,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: #011263;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -1710,7 +1710,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: #26358f;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1721,7 +1721,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color: #6a78c8;
 			color: #fff !important;
 		}
 
@@ -1967,21 +1967,21 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background-color: #f0f0f0;
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			background-color: #fff;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
+			background-color: rgb(246, 248, 255);
+			text-shadow: 1px 1px 0px #f0f0f0;
 		}
 
 		.wrapper.style4 {
-			background-color: #303030;
+			background-color: #090e2e;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 		}
@@ -1995,20 +1995,20 @@ input, select, textarea {
 			.wrapper.style4 form select,
 			.wrapper.style4 form textarea {
 				border: none;
-				background: #282828;
+				background: #090e2e;
 			}
 
 				.wrapper.style4 form input[type=text]:focus,
 				.wrapper.style4 form input[type=password]:focus,
 				.wrapper.style4 form select:focus,
 				.wrapper.style4 form textarea:focus {
-					background: #252525;
+					background: #090e2e;
 				}
 
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		background-color: #090e2e;
 		text-align: right;
 		position: fixed;
 		left: 0;
