@@ -215,6 +215,22 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+/*Project webpages*/
+	.project {
+		text-align: left;
+	}
+		.p {
+			text-align: justify;
+		}
+		.ul {
+			margin-bottom: 0em;
+			list-style-type: disc;
+		}
+		.ulsub {
+			margin-bottom: 0em;
+			list-style-type: circle;
+		}
+		
 /* Container */
 
 	.container {
@@ -1757,7 +1773,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #4f4f4f;
+				background-color: #6a78c8;
 				color: #fff !important;
 			}
 
@@ -2051,7 +2067,7 @@ input, select, textarea {
 
 			#nav a:hover {
 				color: #fff !important;
-				background: #383838;
+				background: #6a78c8;
 			}
 
 			#nav a.active {
