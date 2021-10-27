@@ -1844,7 +1844,7 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					background-color: #444;
+					background-color: #444 !important;
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
@@ -1977,7 +1977,7 @@ input, select, textarea {
 	.wrapper {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 8em 0 8em 0;
+		padding: 4em 0 4em 0 !important;
 		text-align: center;
 	}
 
@@ -2093,7 +2093,7 @@ input, select, textarea {
 	}
 
 	#bio {
-		padding: 10em 0 10em 0;
+		padding: 3em 0 3em 0 !important;
 		text-align: center;
 	}
 
