@@ -1761,7 +1761,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #3BA8D3;
+			background-color: #5e6ab1;
 			top: 1px;
 		}
 
@@ -1797,7 +1797,7 @@ input, select, textarea {
 			input[type="reset"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background-color: #3f3f3f;
+				background-color: #5e6ab1;
 			}
 
 /* List */
@@ -1859,7 +1859,7 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					background-color: #444 !important;
+					background-color: #6a78c8 !important;
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
@@ -1884,6 +1884,12 @@ input, select, textarea {
 
 				ul.social li a.fa-itch-io {
 					background-color: #FA5C5B;
+				}
+				ul.social li a.fa-twitter {
+					background-color: #1DA1F2;
+				}
+				ul.social li a.fa-envelope {
+					background-color: #FAFAFA;
 				}
 
 				ul.social li a:hover {
@@ -2086,7 +2092,7 @@ input, select, textarea {
 			}
 
 			#nav a.active {
-				background: #484848;
+				background: #5e6ab1;
 			}
 
 				#nav a.active:before {
