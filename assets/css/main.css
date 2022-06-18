@@ -2,7 +2,7 @@
 @import url("fontawesome-all.min.css");
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -1677,6 +1677,55 @@ input, select, textarea {
 				width: auto;
 			}
 
+/* Iframe */
+
+	.iframe {
+		display: inline-block;
+		position: relative;
+	}
+
+		.iframe img {
+			display: block;
+			width: 100%;
+		}
+
+		.iframe.fit {
+			display: inline-block;
+			width: 100%;
+		}
+
+		.iframe.slideshow {
+			display: none;
+			position: relative;
+			margin: auto;
+			text-align: center;
+			height: auto;
+			width: 100%;
+			max-height: 56.25vw;
+			width: 100vw;
+		}
+
+		.iframe.featured {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		.iframe.left {
+			float: left;
+			margin: 0 2em 2em 0;
+		}
+
+		.iframe.centered {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.iframe.centered img {
+				margin: 0 auto;
+				width: auto;
+			}
+
 /* Buttons */
 
 	input[type="button"],
@@ -1946,6 +1995,14 @@ input, select, textarea {
 			width: auto;
 		}
 
+		.box.style2 .iframe {
+			position: relative;
+			left: 2em;
+			top: 2em;
+			margin: -4em 0 4em -4em;
+			width: auto;
+		}
+
 /* Icons */
 
 	.icon {
@@ -2004,21 +2061,21 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #f0f0f0;
+			background-color: #f0f0f0 !important;
 		}
 
 		.wrapper.style2 {
-			background-color: #fff;
+			background-color: #fff !important;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style3 {
-			background-color: rgb(246, 248, 255);
+			background-color: rgb(246, 248, 255) !important;
 			text-shadow: 1px 1px 0px #f0f0f0;
 		}
 
 		.wrapper.style4 {
-			background-color: #090e2e;
+			background-color: #090e2e !important;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 		}
@@ -2045,7 +2102,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #090e2e;
+		background-color: #090e2e !important;
 		text-align: right;
 		position: fixed;
 		left: 0;
@@ -2126,6 +2183,17 @@ input, select, textarea {
 		}
 
 			#bio .image img {
+				border-radius: 100%;
+			}
+		
+		#bio .iframe {
+			border-radius: 100%;
+			width: 20em;
+			height: 20em;
+			margin: 0;
+		}
+
+			#bio .iframe img {
 				border-radius: 100%;
 			}
 
@@ -2226,6 +2294,12 @@ input, select, textarea {
 					margin: 0;
 				}
 
+				#bio .iframe {
+					width: 24em;
+					height: 24em;
+					margin: 0;
+				}
+
 	}
 
 /* Medium */
@@ -2240,6 +2314,10 @@ input, select, textarea {
 			}
 
 				#bio .image {
+					margin: 0 auto 2em auto;
+				}
+
+				#bio .iframe {
 					margin: 0 auto 2em auto;
 				}
 
@@ -2375,6 +2453,18 @@ input, select, textarea {
 					width: auto;
 				}
 
+				.box .iframe.centered {
+					margin-bottom: 1em;
+				}
+
+				.box .iframe.featured {
+					position: relative;
+					left: 20px;
+					top: 20px;
+					margin: -50px 0 50px -40px;
+					width: auto;
+				}
+
 				.box.style1 {
 					max-width: 32em;
 					margin-left: auto !important;
@@ -2424,6 +2514,12 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
+				#bio .iframe {
+					width: 15em;
+					height: 15em;
+					margin-bottom: 0;
+				}
+
 				#bio p {
 					font-size: 1em;
 				}
@@ -2452,3 +2548,158 @@ input, select, textarea {
 					}
 
 	}
+
+	
+/* Dark Mode */
+@media (prefers-color-scheme: dark)
+{
+	/*---- Text Colours ----*/
+	b, strong 
+	{
+		font-weight: 600;
+		color: #fff;
+	}
+	body, input, textarea, select 
+	{
+		color: #d8d5cf;
+	}
+	h1, h2, h3, h4, h5, h6 
+	{
+		color: #fff;
+		margin: 0 0 0.75em 0;
+	}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	/*---- ----*/
+	#nav 
+	{
+		background-color: #070b25 !important;
+	}
+	#nav a:hover 
+	{
+		color: #fff !important;
+		background: rgb(47, 59, 127);
+	}
+	#nav a.active 
+	{
+		background: rgb(47, 59, 127);
+	}
+	.wrapper.style1 
+	{
+		background-color: #191b1d !important;
+	}
+	.wrapper.style2 
+	{
+		background-color: #151616 !important;
+		text-shadow: -1px -1px 0px #181818;
+	}
+	.wrapper.style3 
+	{
+		background-color: #1b1d1e !important;
+		text-shadow: -1px -1px 0px #181818;
+	}
+	.wrapper.style4 
+	{
+		background-color: #070b25 !important;
+		color: #999;
+		text-shadow: none;
+	}
+		.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 
+		{
+			color: #fff;
+		}
+		.wrapper.style4 form input[type=text],
+		.wrapper.style4 form input[type=password],
+		.wrapper.style4 form select,
+		.wrapper.style4 form textarea 
+		{
+			background: #090e2e;
+		}
+			.wrapper.style4 form input[type=text]:focus,
+			.wrapper.style4 form input[type=password]:focus,
+			.wrapper.style4 form select:focus,
+			.wrapper.style4 form textarea:focus 
+			{
+				background: #090e2e;
+			}
+	
+	.box 
+	{
+		background: #181a1b;
+		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.7);
+	}
+
+	/*---- Buttons ----*/
+
+	.dot 
+	{
+		cursor: pointer !important;
+		height: 1em;
+		width: 1em;
+		margin: 0 3px;
+		background-color: #3848a0;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+		text-align: center;
+		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	  }
+	  	.active, .dot:hover 
+		  {
+			background-color: #26358f;
+		  }
+	
+	.button 
+	{
+		background-color: #26358f;
+		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	}
+	input[type="button"]:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	button:hover,
+	.button:hover 
+	{
+		background-color: #3848a0;
+		color: #fff !important;
+	}
+	input[type="button"]:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	button:active,
+	.button:active 
+	{
+		background-color: #5e6ab1;
+	}
+
+	input[type="button"].alt,
+	input[type="submit"].alt,
+	input[type="reset"].alt,
+	button.alt,
+	.button.alt 
+	{
+		background-color: #444;
+		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	}
+	input[type="button"].alt:hover,
+	input[type="submit"].alt:hover,
+	input[type="reset"].alt:hover,
+	button.alt:hover,
+	.button.alt:hover 
+	{
+		background-color: #3848a0;
+		color: #fff !important;
+	}
+	input[type="button"].alt:active,
+	input[type="submit"].alt:active,
+	input[type="reset"].alt:active,
+	button.alt:active,
+	.button.alt:active 
+	{
+		background-color: #5e6ab1;
+	}
+}
